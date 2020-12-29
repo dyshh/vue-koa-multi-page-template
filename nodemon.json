@@ -1,0 +1,6 @@
+{
+    "restartable": "rs",
+    "watch": ["server/", "router/", "index.js"],
+    "ignore": ["client"],
+    "exec": "node index.js"
+}

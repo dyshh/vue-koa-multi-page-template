@@ -43,12 +43,11 @@ async function registerApp() {
     // 注册前端路由
     app.use(
         history({
-            htmlAcceptHeaders: ['text/html'],
-            index: '/front.html',
-            rewrites: [
-                { from: /^\/admin$/, to: '/admin.html' },
-                { from: /^\/$/, to: '/front.html' }
-            ]
+            index: '/front.html'
+            // rewrites: [
+            //     { from: /^\/admin$/, to: '/admin.html' },
+            //     { from: /^\/$/, to: '/front.html' }
+            // ]
         })
     )
 

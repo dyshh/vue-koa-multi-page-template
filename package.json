@@ -6,7 +6,7 @@
     "author": "pky",
     "license": "MIT",
     "scripts": {
-        "dev": "nodemon -e js --ignore vue/ index.js",
+        "dev": "nodemon --config nodemon.json",
         "build": "cross-env NODE_ENV=production webpack --config client/build/webpack.config.js --colors --profile --display-modules --progress",
         "start": "cross-env NODE_ENV=production node index.js"
     },
@@ -33,10 +33,11 @@
         "mini-css-extract-plugin": "^0.9.0",
         "nodemon": "^2.0.4",
         "style-loader": "^1.2.1",
+        "eslint-plugin-vue": "^7.4.0",
         "url-loader": "^4.1.0",
         "vue": "^2.6.11",
         "vue-loader": "^15.9.2",
-        "vue-router": "^3.3.4",
+        "vue-router": "^3.4.9",
         "vue-style-loader": "^4.1.2",
         "vue-template-compiler": "^2.6.11",
         "webpack": "^4.43.0",
